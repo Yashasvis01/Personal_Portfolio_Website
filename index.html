@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yashasvi Singh | Python & Frontend Web Developer Portfolio</title>
+
+  <!-- ============ SEO META TAGS ============ -->
+  <meta name="description" content="Yashasvi Singh — B.Tech CSE student at Quantum University, Python Developer and Frontend Web Developer based in Uttar Pradesh, India. Explore projects, skills, and experience." />
+  <meta name="keywords" content="Yashasvi Singh, Python Developer, Frontend Developer, Web Developer Portfolio, B.Tech CSE, Quantum University, JavaScript Developer, Student Developer Portfolio 2026" />
+  <meta name="author" content="Yashasvi Singh" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://yashasvisingh.dev/" />
+
+  <!-- ============ OPEN GRAPH ============ -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Yashasvi Singh | Python & Frontend Web Developer" />
+  <meta property="og:description" content="B.Tech CSE student, Python Developer and Frontend Web Developer. View my projects, skills, and internship experience." />
+  <meta property="og:image" content="assets/images/og-cover.jpg" />
+  <meta property="og:url" content="https://yashasvisingh.dev/" />
+  <meta property="og:site_name" content="Yashasvi Singh Portfolio" />
+
+  <!-- ============ TWITTER CARD ============ -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Yashasvi Singh | Python & Frontend Web Developer" />
+  <meta name="twitter:description" content="B.Tech CSE student, Python Developer and Frontend Web Developer. View my projects, skills, and internship experience." />
+  <meta name="twitter:image" content="assets/images/og-cover.jpg" />
+
+  <!-- ============ FAVICON ============ -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+  <!-- ============ FONTS ============ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- ============ STYLES ============ -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- ============ STRUCTURED DATA (JSON-LD) ============ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Yashasvi Singh",
+    "jobTitle": "Python Developer, Frontend Web Developer",
+    "url": "https://yashasvisingh.dev/",
+    "sameAs": [
+      "https://github.com/yashasvisingh",
+      "https://www.linkedin.com/in/yashasvi-singh-191b4a375",
+      "https://leetcode.com/yashasvisingh"
+    ],
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Quantum University"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressRegion": "Uttar Pradesh",
+      "addressCountry": "India"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ============ PRELOADER ============ -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader__mark">
+      <span>Y</span><span>S</span>
+    </div>
+    <div class="preloader__bar"><div class="preloader__bar-fill"></div></div>
+  </div>
+
+  <!-- ============ CUSTOM CURSOR ============ -->
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+  <!-- ============ SKIP LINK (ACCESSIBILITY) ============ -->
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- ============ SCROLL PROGRESS BAR ============ -->
+  <div class="scroll-progress" id="scrollProgress" role="progressbar" aria-hidden="true"></div>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="navbar" id="navbar">
+    <nav class="navbar__inner" aria-label="Primary navigation">
+      <a href="#home" class="navbar__logo" aria-label="Yashasvi Singh home">
+        <span class="navbar__logo-bracket">&lt;</span>YS<span class="navbar__logo-bracket">/&gt;</span>
+      </a>
+
+      <ul class="navbar__links" id="navLinks">
+        <li><a href="#home" class="nav-link active-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#internship" class="nav-link">Internship</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="navbar__actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark theme" aria-pressed="false">
+          <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path></svg>
+          <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+
+        <button class="navbar__hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO SECTION ============ -->
+    <section class="hero" id="home">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__gradient"></div>
+        <div class="hero__blob hero__blob--1"></div>
+        <div class="hero__blob hero__blob--2"></div>
+        <div class="hero__blob hero__blob--3"></div>
+        <div class="hero__grid"></div>
+      </div>
+
+      <div class="hero__container">
+        <div class="hero__text reveal-up">
+          <p class="hero__eyebrow">Hello, I'm</p>
+          <h1 class="hero__name">Yashasvi Singh</h1>
+          <h2 class="hero__role">
+            <span id="typedText" class="hero__typed"></span><span class="hero__cursor" aria-hidden="true">|</span>
+          </h2>
+          <p class="hero__desc">
+            B.Tech CSE student at Quantum University, crafting clean interfaces and
+            reliable Python tools. I turn ideas into fast, accessible, production-ready products.
+          </p>
+
+          <div class="hero__cta">
+            <a href="file:///C:/Users/Yashasvi%20Singh/Downloads/Yashasvi_Singh_Resume.pdf" class="btn btn--primary ripple" download>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 21h16"></path></svg>
+              Resume
+            </a>
+            <a href="#contact" class="btn btn--ghost ripple">Contact</a>
+          </div>
+
+          <div class="hero__socials">
+            <a href="https://github.com/Yashasvis01" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub profile">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.79 23.4c.6.1.82-.26.82-.58v-2.02c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.1-.75.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.08 1.84 2.83 1.31 3.52 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.83.58A12 12 0 0 0 12 .3z"></path></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/yashasvi-singh-191b4a375" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn profile">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.86 0-2.15 1.45-2.15 2.94v5.66H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.11 20.45H3.56V9h3.55v11.45zM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.75C24 .78 23.2 0 22.22 0z"></path></svg>
+            </a>
+            <a href="https://leetcode.com/u/Yashasvi0312/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LeetCode profile">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M22 14.355c0-.742-.15-1.16-.543-1.478-.574-.466-1.509-.684-2.245-.828-.742-.14-.863-.2-.979-.34-.233-.282-.253-.739-.057-1.025.264-.383.745-.553 1.15-.414.285.097.56.347.882.525.37.204.83.056 1.008-.332.178-.388.006-.856-.367-1.054-.49-.26-1.006-.525-1.558-.59-.283-.033-.615-.015-.898.082-.93.315-1.464 1.16-1.402 2.138.07 1.126.86 1.692 1.71 1.87 1.006.21 1.763.385 1.954.765.17.336.037.97-.478 1.25-.407.225-.975.215-1.407-.06-.328-.21-.52-.56-.8-.85a.784.784 0 0 0-1.109-.047c-.31.296-.327.785-.037 1.104.382.42.812.87 1.336 1.157.447.246.962.352 1.477.307.93-.081 1.631-.59 1.9-.148.064-.092.11-.19.124-.296.028-.22.028-.433.028-.655zm-10.375 5.51c-.696.694-1.639 1.05-2.613 1.05a3.67 3.67 0 0 1-2.613-1.05L2.043 15.54a3.73 3.73 0 0 1 0-5.26L6.37 5.92a3.665 3.665 0 0 1 5.227 0c.346.347.533.805.533 1.293 0 .487-.187.946-.533 1.292L6.8 13.333c-.347.347-.534.805-.534 1.293s.187.946.534 1.292l4.331 4.318c.715.713 1.874.713 2.588 0l4.332-4.318a1.815 1.815 0 0 0 0-2.585 1.813 1.813 0 0 0-2.588 0l-1.742 1.737a.916.916 0 0 1-1.292 0 .91.91 0 0 1 0-1.29l1.742-1.738a3.645 3.645 0 0 1 5.166 0c1.43 1.427 1.43 3.743 0 5.17l-4.332 4.318z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero__visual reveal-up" style="--delay:.15s">
+          <div class="hero__photo-frame">
+            <div class="hero__photo-ring"></div>
+            <img src="C:\Users\Yashasvi Singh\AppData\Roaming\Telegram Desktop\photo_2026-07-02_14-52-23.jpg" alt="Yashasvi Singh" class="hero__photo" />
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-indicator" aria-label="Scroll to About section">
+        <span class="scroll-indicator__mouse"><span class="scroll-indicator__wheel"></span></span>
+        <span class="scroll-indicator__label">Scroll</span>
+      </a>
+    </section>
+
+    <!-- ============ ABOUT SECTION ============ -->
+    <section class="section" id="about">
+      <div class="container">
+        <p class="section__eyebrow reveal-up">Get to know me</p>
+        <h2 class="section__title reveal-up">About Me</h2>
+
+        <div class="about__grid">
+          <div class="about__card glass reveal-up">
+            <div class="about__info-list">
+              <div class="about__info-item">
+                <span class="about__info-label">Name</span>
+                <span class="about__info-value">Yashasvi Singh</span>
+              </div>
+              <div class="about__info-item">
+                <span class="about__info-label">Role</span>
+                <span class="about__info-value">B.Tech CSE Student</span>
+              </div>
+              <div class="about__info-item">
+                <span class="about__info-label">College</span>
+                <span class="about__info-value">Quantum University</span>
+              </div>
+              <div class="about__info-item">
+                <span class="about__info-label">Location</span>
+                <span class="about__info-value">Roorkee , Uttarakhand, India</span>
+              </div>
+              <div class="about__info-item">
+                <span class="about__info-label">Email</span>
+                <span class="about__info-value">yashasvis274@gmail.com</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about__content reveal-up" style="--delay:.1s">
+            <h3 class="about__heading">Python Developer &amp; Frontend Web Developer</h3>
+            <p class="about__text">
+              I'm a Computer Science undergraduate who enjoys the full journey from a blank
+              file to a working product &mdash; solving problems in Python, then shaping that logic
+              into interfaces people actually enjoy using. I care about clean code, fast pages,
+              and details most visitors won't consciously notice but will definitely feel.
+            </p>
+            <p class="about__text">
+              Currently sharpening my skills through internships, personal projects, and a
+              steady habit of solving problems on competitive coding platforms.
+            </p>
+
+            <div class="about__stats">
+              <div class="stat-box">
+                <span class="stat-box__num" data-target="3">0</span><span class="stat-box__plus">+</span>
+                <span class="stat-box__label">Projects Built</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-box__num" data-target="1">0</span><span class="stat-box__plus">+</span>
+                <span class="stat-box__label">Internship</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-box__num" data-target="50">0</span><span class="stat-box__plus">+</span>
+                <span class="stat-box__label">Problems Solved</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-box__num" data-target="4">0</span><span class="stat-box__plus">+</span>
+                <span class="stat-box__label">Core Skills</span>
+              </div>
+            </div>
+
+            <a href="C:\Users\Yashasvi Singh\Downloads\Yashasvi_Singh_Resume.pdf" class="btn btn--primary ripple" download>Download Resume</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS SECTION ============ -->
+    <section class="section section--alt" id="skills">
+      <div class="container">
+        <p class="section__eyebrow reveal-up">What I work with</p>
+        <h2 class="section__title reveal-up">Skills &amp; Technologies</h2>
+
+        <div class="skills__grid">
+          <div class="skill-category glass reveal-up">
+            <h3 class="skill-category__title">Languages</h3>
+            <div class="skill-bar">
+              <div class="skill-bar__head"><span>Python</span><span class="skill-bar__pct">88%</span></div>
+              <div class="skill-bar__track"><div class="skill-bar__fill" data-width="88"></div></div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar__head"><span>JavaScript</span><span class="skill-bar__pct">80%</span></div>
+              <div class="skill-bar__track"><div class="skill-bar__fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar__head"><span>C++</span><span class="skill-bar__pct">75%</span></div>
+              <div class="skill-bar__track"><div class="skill-bar__fill" data-width="75"></div></div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar__head"><span>C</span><span class="skill-bar__pct">72%</span></div>
+              <div class="skill-bar__track"><div class="skill-bar__fill" data-width="72"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-category glass reveal-up" style="--delay:.05s">
+            <h3 class="skill-category__title">Frontend</h3>
+            <div class="skill-bar">
+              <div class="skill-bar__head"><span>HTML5</span><span class="skill-bar__pct">92%</span></div>
+              <div class="skill-bar__track"><div class="skill-bar__fill" data-width="92"></div></div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar__head"><span>CSS3</span><span class="skill-bar__pct">88%</span></div>
+              <div class="skill-bar__track"><div class="skill-bar__fill" data-width="88"></div></div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar__head"><span>JavaScript (DOM)</span><span class="skill-bar__pct">78%</span></div>
+              <div class="skill-bar__track"><div class="skill-bar__fill" data-width="78"></div></div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar__head"><span>Responsive Design</span><span class="skill-bar__pct">85%</span></div>
+              <div class="skill-bar__track"><div class="skill-bar__fill" data-width="85"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-category glass reveal-up" style="--delay:.1s">
+            <h3 class="skill-category__title">Backend &amp; Database</h3>
+            <div class="skill-bar">
+              <div class="skill-bar__head"><span>Python (Flask basics)</span><span class="skill-bar__pct">70%</span></div>
+              <div class="skill-bar__track"><div class="skill-bar__fill" data-width="70"></div></div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar__head"><span>MySQL</span><span class="skill-bar__pct">65%</span></div>
+              <div class="skill-bar__track"><div class="skill-bar__fill" data-width="65"></div></div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar__head"><span>REST APIs</span><span class="skill-bar__pct">60%</span></div>
+              <div class="skill-bar__track"><div class="skill-bar__fill" data-width="60"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-category glass reveal-up" style="--delay:.15s">
+            <h3 class="skill-category__title">Tools &amp; Version Control</h3>
+            <div class="skill-bar">
+              <div class="skill-bar__head"><span>Git</span><span class="skill-bar__pct">85%</span></div>
+              <div class="skill-bar__track"><div class="skill-bar__fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar__head"><span>GitHub</span><span class="skill-bar__pct">85%</span></div>
+              <div class="skill-bar__track"><div class="skill-bar__fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar__head"><span>VS Code</span><span class="skill-bar__pct">90%</span></div>
+              <div class="skill-bar__track"><div class="skill-bar__fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar__head"><span>Problem Solving</span><span class="skill-bar__pct">80%</span></div>
+              <div class="skill-bar__track"><div class="skill-bar__fill" data-width="80"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES SECTION ============ -->
+    <section class="section" id="services">
+      <div class="container">
+        <p class="section__eyebrow reveal-up">How I can help</p>
+        <h2 class="section__title reveal-up">Services</h2>
+
+        <div class="services__grid">
+          <div class="service-card glass reveal-up">
+            <div class="service-card__icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            </div>
+            <h3 class="service-card__title">Web Development</h3>
+            <p class="service-card__desc">Responsive, accessible websites built with clean HTML, CSS, and JavaScript from the ground up.</p>
+          </div>
+
+          <div class="service-card glass reveal-up" style="--delay:.05s">
+            <div class="service-card__icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+            </div>
+            <h3 class="service-card__title">Python Programming</h3>
+            <p class="service-card__desc">Scripts, automation tools, and backend logic written in clean, well-documented Python.</p>
+          </div>
+
+          <div class="service-card glass reveal-up" style="--delay:.1s">
+            <div class="service-card__icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="14" rx="2"></rect><path d="M8 21h8M12 17v4"></path></svg>
+            </div>
+            <h3 class="service-card__title">UI/UX Focused Builds</h3>
+            <p class="service-card__desc">Interfaces designed with real attention to spacing, hierarchy, and how a page actually feels to use.</p>
+          </div>
+
+          <div class="service-card glass reveal-up" style="--delay:.15s">
+            <div class="service-card__icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 3"></path></svg>
+            </div>
+            <h3 class="service-card__title">Bug Fixing &amp; Optimization</h3>
+            <p class="service-card__desc">Diagnosing issues and tightening performance in existing Python and web codebases.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS SECTION ============ -->
+   <section class="section section--alt" id="projects">
+      <div class="container">
+        <p class="section__eyebrow reveal-up">Selected work</p>
+        <h2 class="section__title reveal-up">Projects</h2>
+
+        <div class="projects__filters reveal-up" role="tablist" aria-label="Filter projects by category">
+          <button class="filter-btn active-filter" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="filter-btn" data-filter="python" role="tab" aria-selected="false">Python</button>
+          <button class="filter-btn" data-filter="web" role="tab" aria-selected="false">Web</button>
+        </div>
+
+        <div class="projects__grid" id="projectsGrid">
+          <article class="project-card glass reveal-up" data-category="python">
+            <div class="project-card__img-wrap">
+              <img src="C:\Users\Yashasvi Singh\OneDrive\Pictures\Screenshots\Screenshot 2026-07-03 075303.png" alt="Screenshot of the Student Management System interface" class="project-card__img" loading="lazy" />
+              <span class="project-card__tag">Python</span>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Student Management System</h3>
+              <p class="project-card__desc">A desktop application to add, update, search, and manage student records with a simple, reliable interface.</p>
+              <ul class="project-card__stack">
+                <li>Python</li><li>Data Structures</li><li>File Handling</li>
+              </ul>
+              <div class="project-card__links">
+                <a href="https://github.com/yashasvisingh/student-management-system" class="btn btn--small btn--ghost" target="_blank" rel="noopener noreferrer">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.79 23.4c.6.1.82-.26.82-.58v-2.02c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.1-.75.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.08 1.84 2.83 1.31 3.52 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.83.58A12 12 0 0 0 12 .3z"></path></svg>
+                  Code
+                </a>
+                <a href="file:///C:/Users/Yashasvi%20Singh/Downloads/student_register.html" class="btn btn--small btn--primary" target="_blank" rel="noopener noreferrer">Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card glass reveal-up" data-category="web" style="--delay:.05s">
+            <div class="project-card__img-wrap">
+              <img src="C:\Users\Yashasvi Singh\OneDrive\Pictures\Screenshots\Screenshot 2026-07-03 073721.png" alt="Screenshot of the Real Estate Website homepage" class="project-card__img" loading="lazy" />
+              <span class="project-card__tag">Web</span>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Real Estate Website</h3>
+              <p class="project-card__desc">A responsive property-listing website with search, filtering, and detailed property pages.</p>
+              <ul class="project-card__stack">
+                <li>HTML5</li><li>CSS3</li><li>JavaScript</li>
+              </ul>
+              <div class="project-card__links">
+                <a href="C:\Users\Yashasvi Singh\OneDrive\Pictures\Screenshots\Screenshot 2026-07-03 073721.png" class="btn btn--small btn--ghost" target="_blank" rel="noopener noreferrer">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.79 23.4c.6.1.82-.26.82-.58v-2.02c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.1-.75.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.08 1.84 2.83 1.31 3.52 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.83.58A12 12 0 0 0 12 .3z"></path></svg>
+                  Code
+                </a>
+                <a href="file:///C:/Users/Yashasvi%20Singh/Downloads/nestprime-website.html" class="btn btn--small btn--primary" target="_blank" rel="noopener noreferrer">Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card glass reveal-up" data-category="web" style="--delay:.1s">
+            <div class="project-card__img-wrap">
+              <img src="C:\Users\Yashasvi Singh\OneDrive\Pictures\Screenshots\Screenshot 2026-07-03 073410.png" alt="Screenshot of this Portfolio Website" class="project-card__img" loading="lazy" />
+              <span class="project-card__tag">Web</span>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Portfolio Website</h3>
+              <p class="project-card__desc">This site &mdash; a fast, accessible, dark-mode-first personal portfolio built without any framework.</p>
+              <ul class="project-card__stack">
+                <li>HTML5</li><li>CSS3</li><li>JavaScript</li>
+              </ul>
+              <div class="project-card__links">
+                <a href="C:\Users\Yashasvi Singh\OneDrive\Pictures\Screenshots\Screenshot 2026-07-03 073410.png" class="btn btn--small btn--ghost" target="_blank" rel="noopener noreferrer">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.79 23.4c.6.1.82-.26.82-.58v-2.02c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.1-.75.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.08 1.84 2.83 1.31 3.52 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.83.58A12 12 0 0 0 12 .3z"></path></svg>
+                  Code
+                </a>
+                <a href="file:///C:/Users/Yashasvi%20Singh/OneDrive/Desktop/Personal%20Portfolio%20Website/index.html" class="btn btn--small btn--primary">Live Demo</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ INTERNSHIP SECTION ============ -->
+    <section class="section" id="internship">
+      <div class="container">
+        <p class="section__eyebrow reveal-up">Real-world experience</p>
+        <h2 class="section__title reveal-up">Internship</h2>
+
+        <div class="internship-card glass reveal-up">
+          <div class="internship-card__logo">
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQBDgMBEQACEQEDEQH/xAAcAAEAAgIDAQAAAAAAAAAAAAAAAQcECAIDBQb/xAA/EAABAwMBBAkCBAQDCQEAAAABAAIDBAUREgYhMUEHCBM2UWF0ssEicRQjMoFCkaHhFTOxJCVDUlOiwtHwFv/EABkBAQEBAQEBAAAAAAAAAAAAAAABAgMEBf/EACoRAQACAgICAgEBCQEAAAAAAAABAgMRITEEEiJBURMjMmFxgZGhsdEz/9oADAMBAAIRAxEAPwC7lpBAQSoKg6x/du1etPsKSrX1QEBAQEBAQEBAQEBB303+a3y3rN+nbBETeNuUkQc0OjBB5txwSJ1xLWTHuPasf0Y+D4LTzmCghAQdjM6TuQfWUsAsFZFc4KWepa2gE0L9BMYmcMZLhwDQXH7gIOcUTNpp7IH0M1OxgMEz4o3dmImnIIcc8BniUHyLj+Xv5qotPq7d56/0vyorYdvBaRKAgICAgICAglQVB1j+7dq9afYUlWvqgICAgICCeKCEBAQThBOD4IMqmge44x9ThpA+VztaNbe3x8FpnWuZ4/v9syq0unIZgMjbguHNcqb9eX0fK9Jy6r1WNIdTCOmEkjms1fpjxySMm7ahm3ifp+PGS8631DBqAxrANID/AC5Bdo2+Zl9YrEa+THK28yEHNjg3egyW1tQIDC2qmbEQQY2yODT5YQS2tqGwOhbVTNiduMTZHBpz5ZQYj3ZPlyQWt1du89f6X5QbDt4LSJQEBAQEBAQEEqCoOsf3btXrT7Ckq19UBAQEBAQdkcZe7A8OKkzpulJtOmRVUE1MG9rG9hc0PAe3GWnmFmuSLdS6Xw6jcSxcYW3BzijL878AbyVNumOnt30y4YHv/wApobjnjJKnrtucsV/chErOzOqVm/kRu/mk1n6WuWszu8cjJZC0Bp0Z3kt4lYmsbemme811HH5127YhCzeYpZHZyMnAKzMWnjbvh/RpzNZtP8+HZJFUzRvqXMeWsOnWG/Sw+BKzE1rMVZzZbZLTa08/4h5cmoEh3EHevRD5domJ57cFWUICCUDKCEFsdXbvPX+l+UGw7eC0iUBAQEBAQEBBKgqDrH927V60+wpKtfVAQEBAQEHfTTdm/fwON/gVm0bdsVoj4z1L2rpd6691EZrn6pYWBkIY0Bob/dcPH8bFhrMUjvl0yZckXiZ+v9PIfCHSgM3Nccb+Xiu3tqOWZwxe8evUu1gxM2PA0gHPmleeV8jdNU+ntUrQ2Fukb8bytvM6a5oDASMngg8mNpc2SJp07z+652nU7ezBWb0mkTop2PJy0/Wf0j5VnmdMVmcdfee3psvVXT2yptMEuKCQ5e17QXZ8j5rhfxsVssZZj5QuO9prMTPDw5n63uPiV6YjUacMl/e02darAgICAgILY6u3eev9L8oNh28FpEoCAgICAgICCVBUHWP7t2r1p9hSVa+qAgICAgIJHFBkxEyNxk6mjx4hY6l6K7y119w5umOA5jA0H6cZ5+Ks1ieUxZbU3WHMDFPHIASWuOvxWa2iLadr45tgi33E8s2nqtDc/qafDkujxOqrqSRqP7N5ocsaUGNsZbntDlzgucTFpl9C9JxUprvuUCTXlojBdIfpIPBaiPWHkvect3TO7doHAcfMpX8tZZ9fhDoWnBCAgICAgILY6u3eev8AS/KDYdvBaRKAgICAgICAglQVB1j+7dq9afYUlWvqgICAgICDk0ZOOZRYjc6h6NFTtfIYy7Ab+o+Pksxy7Xn9OPWvf27rpTxQxRPjj0lr9/2WnKs6mJYhqS2qL2jLXcW+K5em66e2fKmuebVjifpksp2ygyULtLj+qN3D9lj9WacXeqfAp5Ue/jzz+JRIyKk3yO7afkBwantbJPHEE4cXhRuflf8A0xRUZbM6Te9wwCuk01MaeOvkbreb9y9Oko4nUbA+PDsZLueV0eOJ1LzamHDntyC9nMfxBZ6l2/8ASu/uGGVpwQgICAgICC2Ort3nr/S/KDYdvBaRKAgICAgICAglQVB1j+7dq9afYUlWvqgICAgICDup3Na/JGd27yWbdOuG1azuzJil7EhriNLjlr1YlMtfW3e9sysqddI5hGTjiq5sKaAU88YJw14Bz4FFiZidwy4qGZ8na9u1oI4gcVn1jWnWM+StvaJ1LhJSy0zXuklboduLsb09YSM143/FjMps0slQRuDgGrTk9GWszEMfT4oPPMod+Y4ANacDxKzPL0YY9f2k9MSQguJaMBWOnG0xMzMOCrIgICAgILY6u3eev9L8oNh28FpEoCAgICAgICCVBUHWP7t2r1p9hSVa+qAgICAgIJCDIiIfHpf/AAnP7LE8TuHpx6tT1t9MmWn7GSE69dO85afgqUye3H26eX4k4Ii9Z3W3UvRq4m1tMGtwHA/SfBdHiYVG6sYHMazVp3Fud4WLZK1n5PRi8XLmjeONuM8dTVVDYX7ieIzuC1W0W6ZzYL4Z1ftnziKGjMO7GnH91XF5raZzqQTyOw3OmNvMlcpyfL1h78fh/sf1rT/KPyxZiB+W3g3n4rcfl5ssxHwj6dK04oQEBAQEBBbHV27z1/pflBsO3gtIlAQEBAQEBAQSoKg6x/du1etPsKSrX1QEBAQEBAQc43FrsjipPPDVLTW24elBIySMwyH8p/6T/wAjv/S42rMT7R2+rhyVyY/0rfuz+fqXBk8lO90Ly4Ec2812ifaNvmZcc4rekuJrnMnErCc4wcrN6ReHXxvJv49/aiIawjUcu1OO/G9arERGoccmS2S83t27A51TIQ9zhG3e9xO/Hgs3tqOO3bxsEZbbtxWO0VdRqwQ3Q0DETfAeKxSmnq8ryPbWuIjqPxDzsnxXZ8xCAgICAgICC2Ort3nr/S/KDYdvBaRKAgICAgICAglQVB1j+7dq9afYUlWvqgICAgICAgkIOyF/ZuJxkcwpMbdMd5pO2a14eGfVwP0SHl5HyXPms7e6fXLSKzO/xP8A12Svp2H89j2v54bkfsukTE9PDkw2xz8oSHRuYTTtIGN73DAb9vEqTfXTeLx7ZPlr4/l0SSNYwDH0g7geLz4lYiJmXqvkrSvrEcR/n+MsJ7nOdqdvK6xGngtabTuXBGRAQEBAQEBBbHV27z1/pflBsO3gtIlAQEBAQEBAQSoKg6x/du1etPsKSrX1QEBAQZFBRVVfVx0tFA+eeQ4ZGwZJKD7WHoj2ylg7U21rN2dD5QHIPjLjQ1NtrJqKtidDUQvLJY3cWlB0MY57g1jSXHcABxQfY2fow2tuzGyRWt0MTuD5yGf0QZG0fRjtHsvaZbpWNppKaLHa9lJktBOM4+5Ckxtul5rL5imqiwb2CVn/AE3cQuN8e+uH1fG8v1jUx7V/E9uqqqC45dp3cGN4NVpTUOPk+VN55/tHUMJ5cXZfxXaI0+fa02ncuOD4IylrS5wABJO4AIPurB0T7VXmATikZRxkZaal2nV9gg8Ta/Y+8bJVLIbvT6WyZ7OZhyx/jgoPn8EHGEDGEEICAgtjq7d56/0vyg2HbwWkSgICAgICAgIJUFQdY/u3avWn2FJVr6oCAgIPX2av9Zs1eIbpbuz7eIEASNyCDxBQbL3LaOub0V//AKJhZHWyW5lRljdzXuaDuB+6Cu9mujGHbTY2G/VtfK283CZ0r53nU3SHlpGnxwP6oPUufRjb9kKFu0thnlq6q1jtzFVlro5wM54DcfDCD63ow23m22oa2pmoY6Q00rWBschcDkZ5gIK5u132g6S9sZ9kW1DKa1RTuM3Zs/4bDxdnic4x5oPqJ+i7YesbU2a3SvjutPEHOe2Yl8ZPAuHDHkhHD4DZXonnvtmvFW+sLaqkllgpomAaZZGZH1E8ASMIPUk6CbiyympN2gNwaztDTln0ZxnTqzx88IPcd0IWieltcjbhPA0RA1rsgmQkcW53N37kHj7Y9F9FsvcLJcbVUTyU0lwgilimIJblwwQcBBam3d+uez9von2S2ivqqmqbAIiTuBBOd32QeH0y0IumxtNRmNv+IVFXDHTN8HkjVjyxq/kg8qh6LdirTDR2q+Tdtda0EMLpS1z3Ab9AHIIKb6Q9mhsntRUWqOUyxNAfE88dLuAPmg+aQEBBbHV27z1/pflBsO3gtIlAQEBAQEBAQSoKg6x/du1etPsKSrX1QEBAQTjdlBsptcx1F0HQ05a7ULbTx4Azv0tQcNjayWk6CI6mncWSxUdQWO5giR6DtsMzqXoLE9a9zj/h0ry55ySHFxH+oQeN1bT/ALkvY5ioYf8AtKDH6EnRnbza3Xjty46PHT2js/8Aig+qvV6pbTdLjQbIWKoq9pKw/nPEJYwHG5z5HYBAHDBQR0QRV9u2auVPd49NdT1srpmlwP1H6jw3c0FB3XbTaCuuFfO661TBVOdqjZIQ0NzuaBy3bkF69MVTVQdGsTKORzXzOgjOg4LgcbkGf0kvFPY7FTykF77nRsyeZDwT/og9rbTamg2RtLLjcopZI3SBjWxAF2ojz+yCo9ntup9telO0SVrRT0UBf+Fps5DXYP1Hxcgs3a662Sx3amrqi1VFde3xaKNsFO57iM8A7GG7zvyg196T4doHbSOr9pqL8HPWN1xR62uwwbgNxPBB8egICC2Ort3nr/S/KDYdvBaRKAgICAgICAglQVB1j+7dq9afYUlWvqgICAg+j2Er7JbtpIKraSmdUULGuyxrdX1ciRzCC47t027NxUXY26gqKs6dLYpGBjB4ceSD4ek6SqeDo1q9m/wkjayZ0rWObjs2skeXH+WohBy2g6RaWq6MLZs1QNkFWImQ1ZLcNa1nIeOcBBx6HNvLbsjHdoLv2giqAx8JjZqOoZBB++R/JB8vY9rqqx7XSbQUDdLpJXudCTuexxyWn/7iEFp3Lp5pDbnG22iYVzm4BlcNDT+3FB85sP0pMtFrv7byJp62te+eBzRkOkc3Gk+A4IKqO870Foba9JsG0Gzllt9PSSNmp3xyVOrgSzG4fdBPSf0kUu0VzszrQ2X8JQSNqCZG4LpAQcD7fKDs6YekK17WWu20Vp7YiN/bTF7dIa7SRp8+JQVjQ1c1DWQ1dK8smheHscORCC8KHp4pBbWGvtE7q5jQCY3jQ48z5IKn2z2qrtrbw64V+G4GmKJvCNvgg8AnJyghAQWx1du89f6X5QbDt4LSJQEBAQEBAQEEqCoOsf3btXrT7Ckq19UBAQEE5QMoGUDig5Ab/PHNBHP7oHD+yBw4IGnegnBz8oIQHZwMoICBneghAQEBBbHV27z1/pflBsO3gtIlAQEBAQEBAQSoKg6x/du1etPsKSrX1QEBAQEBAQc4xlwHiQEFk0WxdAOkGptdTSTf4aKV80AeXDtCGg7iBv3nkg8t1uszNmtoKp9ud+LoqtkELu3cABJqwSCP4dP9UHZslYbTtBUXX8Pb6l7WwtbRh7y1jZNJLtbwN3Ddncg8nYS00t2v/wCFr6eaeJsTzpizjXwaXEDc3PEoPUmtFrorHtI6ttpNdbqwQROZUktbqJA5b9OP3QZly2FpaKx2WqLiat00LbjF2gJaJSMbuR3gfugzrvsnYLftraLdHRyS0VaZI5NM5LA5ry0FrvHA3jkUFcXgQNulWykhMMDZXNZGXai0A44oMJAQEBAQEFsdXbvPX+l+UGw7eC0iUBAQEBAQEBBKgqDrH927V60+wpKtfVAQEBAQEBAQZRuNcZGyGsqO0Y3S13auyB4A54IOp9RM/Xrle7tCC/Lj9RHM+JQTDVVEDXtgnljDxhwY8t1DwOEEQVM9NJ2lPNJE/GNUbi04/ZBBmlLXtMj9Lzl41HDj4nxQcjVVBc5xnlLn4LjrOXY4Z+yB+Lqfp/2iXLXFzTrO4niR5oOokk5JyUEICAgICAgtjq7d56/0vyg2HbwWkSgICAgICAgIJUFQdY/u3avWn2FJVr6oCAgICAgICAgICAgICAgICAgICAgILY6u3eev9L8oNh28FpEoCAgICAgICCVBUHWP7t2r1p9hSVa+qAgICAgICAgICAgICAgICAgICAgICC2Ort3nr/S/KDYdvBaRKAgICAg//9k=" alt="InternPe company logo" loading="lazy" />
+          </div>
+          <div class="internship-card__body">
+            <div class="internship-card__head">
+              <div>
+                <h3 class="internship-card__role">Python Programming Intern</h3>
+                <p class="internship-card__company">InternPe</p>
+              </div>
+              <span class="internship-card__duration">6 Weeks</span>
+            </div>
+            <ul class="internship-card__list">
+              <li>Built small Python programs and utilities covering core logic, file handling, and data structures.</li>
+              <li>Debugged existing scripts and improved readability and reliability of the codebase.</li>
+              <li>Practiced writing clean, documented, and reusable functions under deadlines.</li>
+            </ul>
+            <a href="assets/resume/InternPe_Certificate.pdf" class="btn btn--small btn--primary" target="_blank" rel="noopener noreferrer">View Certificate</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION SECTION ============ -->
+    <section class="section" id="education">
+      <div class="container">
+        <p class="section__eyebrow reveal-up">Academic background</p>
+        <h2 class="section__title reveal-up">Education</h2>
+
+        <div class="timeline">
+          <div class="timeline__item reveal-up">
+            <div class="timeline__dot"></div>
+            <div class="timeline__content glass">
+              <span class="timeline__date">2025 &ndash; 2029</span>
+              <h3 class="timeline__title">Bachelor of Technology &mdash; Computer Science Engineering</h3>
+              <p class="timeline__place">Quantum University, Uttarakhand</p>
+            </div>
+          </div>
+
+          <div class="timeline__item reveal-up" style="--delay:.1s">
+            <div class="timeline__dot"></div>
+            <div class="timeline__content glass">
+              <span class="timeline__date">2022 &ndash; 2024</span>
+              <h3 class="timeline__title">Higher Secondary Education (PCM)</h3>
+              <p class="timeline__place">Senior Secondary School, Uttar Pradesh</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE SECTION ============ -->
+    <section class="section section--alt" id="experience">
+      <div class="container">
+        <p class="section__eyebrow reveal-up">Where I've applied it</p>
+        <h2 class="section__title reveal-up">Experience</h2>
+
+        <div class="timeline">
+          <div class="timeline__item reveal-up">
+            <div class="timeline__dot"></div>
+            <div class="timeline__content glass">
+              <span class="timeline__date">2026</span>
+              <h3 class="timeline__title">Python Programming Intern</h3>
+              <p class="timeline__place">InternPe</p>
+              <p class="timeline__desc">Built and debugged Python programs, strengthening core programming fundamentals.</p>
+            </div>
+          </div>
+
+          <div class="timeline__item reveal-up" style="--delay:.1s">
+            <div class="timeline__dot"></div>
+            <div class="timeline__content glass">
+              <span class="timeline__date">Ongoing</span>
+              <h3 class="timeline__title">Freelancing</h3>
+              <p class="timeline__place">Independent</p>
+              <p class="timeline__desc">Taking on small web development projects to apply skills to real client needs.</p>
+            </div>
+          </div>
+
+          <div class="timeline__item reveal-up" style="--delay:.2s">
+            <div class="timeline__dot"></div>
+            <div class="timeline__content glass">
+              <span class="timeline__date">Ongoing</span>
+              <h3 class="timeline__title">Open Source</h3>
+              <p class="timeline__place">GitHub</p>
+              <p class="timeline__desc">Exploring beginner-friendly repositories and contributing small fixes and improvements.</p>
+            </div>
+          </div>
+
+          <div class="timeline__item timeline__item--future reveal-up" style="--delay:.3s">
+            <div class="timeline__dot"></div>
+            <div class="timeline__content glass">
+              <span class="timeline__date">What's Next</span>
+              <h3 class="timeline__title">Software Engineering Role</h3>
+              <p class="timeline__place">Future Placeholder</p>
+              <p class="timeline__desc">Looking ahead to a full-time role where I can grow as a software engineer.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CODING PROFILES SECTION ============ -->
+    <section class="section" id="coding-profiles">
+      <div class="container">
+        <p class="section__eyebrow reveal-up">Track record</p>
+        <h2 class="section__title reveal-up">Coding Profiles</h2>
+
+        <div class="profiles__grid">
+          <a href="https://github.com/Yashasvis01" target="_blank" rel="noopener noreferrer" class="profile-card glass reveal-up">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.79 23.4c.6.1.82-.26.82-.58v-2.02c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.1-.75.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.08 1.84 2.83 1.31 3.52 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.83.58A12 12 0 0 0 12 .3z"></path></svg>
+            <span class="profile-card__name">GitHub</span>
+            <span class="profile-card__user">@yashasvisingh</span>
+            <span class="btn btn--small btn--ghost">Visit</span>
+          </a>
+          <a href="https://www.linkedin.com/in/yashasvi-singh-191b4a375" target="_blank" rel="noopener noreferrer" class="profile-card glass reveal-up" style="--delay:.05s">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.86 0-2.15 1.45-2.15 2.94v5.66H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.11 20.45H3.56V9h3.55v11.45zM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.75C24 .78 23.2 0 22.22 0z"></path></svg>
+            <span class="profile-card__name">LinkedIn</span>
+            <span class="profile-card__user">Yashasvi Singh</span>
+            <span class="btn btn--small btn--ghost">Visit</span>
+          </a>
+          <a href="https://leetcode.com/u/Yashasvi0312/" target="_blank" rel="noopener noreferrer" class="profile-card glass reveal-up" style="--delay:.1s">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M22 14.355c0-.742-.15-1.16-.543-1.478-.574-.466-1.509-.684-2.245-.828-.742-.14-.863-.2-.979-.34-.233-.282-.253-.739-.057-1.025.264-.383.745-.553 1.15-.414.285.097.56.347.882.525.37.204.83.056 1.008-.332.178-.388.006-.856-.367-1.054-.49-.26-1.006-.525-1.558-.59-.283-.033-.615-.015-.898.082-.93.315-1.464 1.16-1.402 2.138.07 1.126.86 1.692 1.71 1.87 1.006.21 1.763.385 1.954.765.17.336.037.97-.478 1.25-.407.225-.975.215-1.407-.06-.328-.21-.52-.56-.8-.85a.784.784 0 0 0-1.109-.047c-.31.296-.327.785-.037 1.104.382.42.812.87 1.336 1.157.447.246.962.352 1.477.307.93-.081 1.631-.59 1.9-.148.064-.092.11-.19.124-.296.028-.22.028-.433.028-.655zm-10.375 5.51c-.696.694-1.639 1.05-2.613 1.05a3.67 3.67 0 0 1-2.613-1.05L2.043 15.54a3.73 3.73 0 0 1 0-5.26L6.37 5.92a3.665 3.665 0 0 1 5.227 0c.346.347.533.805.533 1.293 0 .487-.187.946-.533 1.292L6.8 13.333c-.347.347-.534.805-.534 1.293s.187.946.534 1.292l4.331 4.318c.715.713 1.874.713 2.588 0l4.332-4.318a1.815 1.815 0 0 0 0-2.585 1.813 1.813 0 0 0-2.588 0l-1.742 1.737a.916.916 0 0 1-1.292 0 .91.91 0 0 1 0-1.29l1.742-1.738a3.645 3.645 0 0 1 5.166 0c1.43 1.427 1.43 3.743 0 5.17l-4.332 4.318z"/></svg>
+            <span class="profile-card__name">LeetCode</span>
+            <span class="profile-card__user">@yashasvisingh</span>
+            <span class="btn btn--small btn--ghost">Visit</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS SECTION ============ -->
+    <section class="section" id="testimonials">
+      <div class="container">
+        <p class="section__eyebrow reveal-up">Kind words</p>
+        <h2 class="section__title reveal-up">Testimonials</h2>
+
+        <div class="testimonial-slider reveal-up">
+          <div class="testimonial-track" id="testimonialTrack">
+            <div class="testimonial-card glass">
+              <div class="testimonial-card__rating" aria-label="5 out of 5 stars">★★★★★</div>
+              <p class="testimonial-card__text">Yashasvi picks things up fast and writes cleaner code than most people twice his experience. Reliable and easy to work with.</p>
+              <div class="testimonial-card__author">
+                <img src="data:image/jpeg;base64,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" alt="Portrait of reviewer" loading="lazy" />
+                <div>
+                  <span class="testimonial-card__name">Mentor, InternPe</span>
+                  <span class="testimonial-card__role">Internship Supervisor</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card glass">
+              <div class="testimonial-card__rating" aria-label="5 out of 5 stars">★★★★★</div>
+              <p class="testimonial-card__text">Great attention to detail on the Real Estate Website project &mdash; the layout worked well on every screen size we tested.</p>
+              <div class="testimonial-card__author">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfWnyk9GWP3WrUuJrj7qvFUwMnbo9NGxVLyz6C4tsLeA&s=10" alt="Portrait of reviewer" loading="lazy" />
+                <div>
+                  <span class="testimonial-card__name">Classmate</span>
+                  <span class="testimonial-card__role">Quantum University</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card glass">
+              <div class="testimonial-card__rating" aria-label="5 out of 5 stars">★★★★★</div>
+              <p class="testimonial-card__text">Communicates clearly, meets deadlines, and always double-checks the small details before calling something done.</p>
+              <div class="testimonial-card__author">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1iEaN1d8ZxB12mLsDO5n3G6ord_dT5vJI6_AXKWs0bw&s=10" alt="Portrait of reviewer" loading="lazy" />
+                <div>
+                  <span class="testimonial-card__name">Freelance Client</span>
+                  <span class="testimonial-card__role">Small Business Owner</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-slider__controls">
+            <button class="slider-btn" id="testimonialPrev" aria-label="Previous testimonial">&#8592;</button>
+            <div class="testimonial-dots" id="testimonialDots"></div>
+            <button class="slider-btn" id="testimonialNext" aria-label="Next testimonial">&#8594;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT SECTION ============ -->
+    <section class="section section--alt" id="contact">
+      <div class="container">
+        <p class="section__eyebrow reveal-up">Let's talk</p>
+        <h2 class="section__title reveal-up">Contact Me</h2>
+
+        <div class="contact__grid">
+          <div class="contact__info reveal-up">
+            <p class="contact__intro">
+              Have a project in mind, an opportunity to discuss, or just want to say hello?
+              My inbox is open.
+            </p>
+
+            <div class="contact__detail">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 6-10 7L2 6"></path></svg>
+              <a href="mailto:yashasvis274@gmail.com">yashasvis274@gmail.com</a>
+            </div>
+            <div class="contact__detail">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <a href="tel:+919621844668">+91 96218 44668</a>
+            </div>
+            <div class="contact__detail">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>Ayodhya, Uttar Pradesh, India</span>
+            </div>
+
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14254.625501175806!2d81.98620514999999!3d26.7234226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1783053044194!5m2!1sen!2sin" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin">
+          </iframe>
+          </div>
+          <form class="contact__form glass reveal-up" id="contactForm" style="--delay:.1s" novalidate>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your full name" required />
+              <span class="form-error" id="nameError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required />
+              <span class="form-error" id="emailError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="What's this about?" required />
+              <span class="form-error" id="subjectError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me a bit more..." required></textarea>
+              <span class="form-error" id="messageError"></span>
+            </div>
+
+            <button type="submit" class="btn btn--primary ripple contact__submit" id="submitBtn">
+              <span class="btn__label">Send Message</span>
+              <span class="btn__spinner" aria-hidden="true"></span>
+            </button>
+
+            <p class="contact__success" id="successMessage" role="status" aria-live="polite">
+              Thanks! Your message has been received &mdash; I'll get back to you soon.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#home" class="navbar__logo footer__logo" aria-label="Yashasvi Singh home">
+        <span class="navbar__logo-bracket">&lt;</span>YS<span class="navbar__logo-bracket">/&gt;</span>
+      </a>
+
+      <ul class="footer__links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="footer__socials">
+        <a href="https://github.com/Yashasvis01" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub profile">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.79 23.4c.6.1.82-.26.82-.58v-2.02c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.1-.75.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.08 1.84 2.83 1.31 3.52 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 1１．５ 0 0 １ 6 0c２．３－１．５５ ３．３－１．２３ ３．３－１．２３．６６ １．６６．２４ ２．８８．１２ ３．１８．７７．８４ １．２３ １．９１ １．２３ ３．２２ ０ ４．６１－２．８ ５．６３－５．４８ ５．９２．４３．３７．８１ １．１．８１ ２．２２v３．２９c０ .３２．２２ .６９ .８３ .５８A１２ １２ ０ ０ ０ １２ .３z"></path></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/yashasvi-singh-191b4a375" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn profile">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.86 0-2.15 1.45-2.15 2.94v5.66H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.11 20.45H3.56V9h3.55v11.45zM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.75C24 .78 23.2 0 22.22 0z"></path></svg>
+        </a>
+        <a href="mailto:yashasvis274@gmail.com" class="social-icon" aria-label="Send email">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 6-10 7L2 6"></path></svg>
+        </a>
+      </div>
+    </div>
+    <p class="footer__copyright">&copy; <span id="year"></span> Yashasvi Singh. All rights reserved.</p>
+  </footer>
+
+  <!-- ============ FLOATING ACTION / BACK TO TOP ============ -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"></path></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
